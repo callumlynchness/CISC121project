@@ -107,68 +107,11 @@ Output:
 	Show the fully sorted list
 	Total number of swaps
 
-Flowchart:
-                ┌───────────────────────┐
-                │       Start           │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │   Set swapped = True  │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │   While swapped = True│
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │   swapped = False     │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │ For i = 0 to n-2      │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────────────┐
-                │ Compare element[i] and [i+1]  │
-                └───────────┬───────────────────┘
-                            │
-          ┌─────────────────┴─────────────────┐
-          │                                   │
-          ▼                                   ▼
-┌───────────────────────┐          ┌───────────────────────┐
-│ If element[i] > [i+1] │          │ Else (no swap needed) │
-└───────────┬───────────┘          └───────────┬───────────┘
-            │                                   │
-            ▼                                   │
-┌───────────────────────────────┐              │
-│ Swap element[i] and element[i+1] │            │
-│ swapped = True                  │            │
-└───────────┬────────────────────┘              │
-            │                                   │
-            └───────────────────────────────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │ End of for loop       │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │ If swapped = False    │
-                │   → Array is sorted   │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │         End           │
-                └───────────────────────┘
+Flowchart: <img width="705" height="1439" alt="image" src="https://github.com/user-attachments/assets/9066ac9a-52a6-4043-9483-e1c5af2e7126" />
+
 
 Hugging Face link: https://huggingface.co/spaces/callumarii/CISC121project
 
 Done by Callum Lynch
+
 I used ChatGPT and Copilot to help me with edge cases, troubleshoot errors in my code, fix my syntax errors with gradio and other libraries I wasn't too familiar with, describe the implementation of certain features, and answer questions about why my code wouldn't run...
